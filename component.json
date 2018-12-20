@@ -1,0 +1,45 @@
+{
+    "title": "GetMyInvoices",
+    "description": "GetMyInvoices REST API",
+    "docsUrl": "https://api.getmyinvoices.com/accounts/v2/doc/",
+    "credentials": {
+        "fields":{
+            "apiKey": {
+                "label": "API key of account",
+                "required": true,
+                "viewClass": "TextFieldView",
+                "note": "The API key of your GetMyInvoices account",
+                "placeholder": "XXXX-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"
+            },
+            "apiBaseUrl": {
+                "label": "GetMyInvoices API Base Url",
+                "required": true,
+                "viewClass": "TextFieldView",
+                "note": "Enter the base url of the GetMyInvoices API",
+                "placeholder": "https://api.getmyinvoices.com/accounts/v2"
+            }
+        }
+    },
+    "triggers": {
+        "getDocumentsPolling": {
+            "main": "./lib/triggers/getDocumentsPolling.js",
+            "type": "polling",
+            "title": "Fetch new and updated document objects",
+            "metadata": {
+                "in": "./lib/schemas/getDocumentsPolling.in.json",
+                "out": "./lib/schemas/getDocumentsPolling.out.json"
+            }
+        }
+    },
+    "actions": {
+        "lookupDocument" : {
+            "title": "Get Single Document",
+            "main": "./lib/actions/lookupDocument.js",
+            "description": "Fetches single document object for the given inputs.",
+            "metadata": {
+                "in": "./lib/schemas/lookupDocument.in.json",
+                "out": "./lib/schemas/lookupDocument.out.json"
+            }
+        }
+    }
+}

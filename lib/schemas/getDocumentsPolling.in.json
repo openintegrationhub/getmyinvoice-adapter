@@ -1,0 +1,83 @@
+{
+    "type": "object",
+    "properties": {
+      "company_filter": {
+        "type": "integer",
+        "required": false,
+        "title": "Company filter",
+        "note": "Filter by company. Possible values: 0 = Any, -1 = unassigned or any if from the /listCompanies api",
+        "placeholder": "0"
+      },
+      "archived_filter": {
+        "type": "integer",
+        "required": false,
+        "title": "Archived filter",
+        "note": "Filter archived documents. Possible values: 0 = Only not archived, 1 = Any, 2 = Only archived",
+        "placeholder": "1"
+      },
+      "document_type_filter": {
+        "type": "string",
+        "required": false,
+        "title": "Document type filter",
+        "note": "Document type. Possible values: INCOMING_INVOICE / RECEIPT / PAYMENT_RECEIPT / EXPENSE_REIMBURSEMENT / SALES_INVOICE / CREDIT_NOTE / STATEMENT / DELIVERY_NOTE / ORDER_CONFIRMATION / PAYROLL / COMPANY_REGISTRATION_DOCUMENT / MISC.",
+        "placeholder": "INCOMING_INVOICE"
+      },
+      "document_number_filter": {
+        "type": "string",
+        "required": false,
+        "title": "Document number filter",
+        "note": "Filter by document number.",
+        "placeholder": "144-23232"
+      },
+      "note_filter": {
+        "type": "string",
+        "required": false,
+        "title": "Note filter",
+        "note": "Filter by note.",
+        "placeholder": "Hosting"
+      },
+      "start_date_filter": {
+        "type": "string",
+        "required": false,
+        "title": "Start date filter",
+        "note": "Start document date filter.",
+        "placeholder": "2017-08-18"
+      },
+      "end_date_filter": {
+        "type": "string",
+        "required": false,
+        "title": "End date filter",
+        "note": "End document date filter.",
+        "placeholder": "2017-09-18"
+      },
+      "prim_uid_exclusion_filter": {
+        "type": "string",
+        "required": false,
+        "title": "Prim uid exclusion filter",
+        "note": "Comma separated list of prim_uids that should not be in the results.",
+        "placeholder": "28715,28716"
+      },
+      "prim_uid_start_filter": {
+        "type": "integer",
+        "required": false,
+        "title": "Prim uid start filter",
+        "note": "prim_uid that can be used to limit result to only higher prim_uids.",
+        "placeholder": "28714"
+      },
+      "updated_or_new_since_filter": {
+        "type": "string",
+        "required": false,
+        "title": "Updated or new since filter",
+        "note": "Limit result to documents modified or created after given date.",
+        "placeholder": "2027-08-18 18:12:50"
+      },
+      "api_key": {
+        "type": "string",
+        "required": true,
+        "title": "API Key",
+        "note": "API key of account.",
+        "placeholder": "XXXX-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"
+      }
+      
+    }
+  }

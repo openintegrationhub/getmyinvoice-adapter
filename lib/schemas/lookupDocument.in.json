@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+      "document_prim_uid": {
+        "type": "string",
+        "required": true,
+        "title": "Document prim uid",
+        "note": "PRIM_UID of the document.",
+        "placeholder": "28715"
+      },
+      "load_line_items": {
+        "type": "boolean",
+        "required": false,
+        "title": "Load line items",
+        "note": "Set to true if you want to receive line items as well",
+        "placeholder": "true"
+      },
+      "readable_text": {
+        "type": "boolean",
+        "required": false,
+        "title": "Readable text",
+        "note": "Set to true if you want to receive readable text from document",
+        "placeholder": "true"
+      },
+      "api_key": {
+        "type": "string",
+        "required": true,
+        "title": "API key",
+        "note": "API key of account",
+        "placeholder": "XXXX-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX"
+      }
+    }
+}

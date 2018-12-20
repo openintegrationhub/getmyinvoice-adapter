@@ -1,0 +1,246 @@
+{
+    "type": "array",
+    "properties": {
+      "meta_data": {
+        "type": "object",
+        "required": false,
+        "title": "Metadata",
+        "properties": {
+          "prim_uid": {
+            "type": "numeric",
+            "required": true,
+            "title": "Prim UID"
+          },
+          "company_uid": {
+            "type": "numeric",
+            "required": false,
+            "title": "Company UID"
+          },
+          "document_type": {
+            "type": "string",
+            "required": false,
+            "title": "Document type"
+          },
+          "document_number": {
+            "type": "string",
+            "required": false,
+            "title": "Document number"
+          },
+          "document_date": {
+            "type": "string",
+            "required": false,
+            "title": "Document date"
+          },
+          "document_due_date": {
+            "type": "string",
+            "required": false,
+            "title": "Document due date"
+          },
+          "net_amount": {
+            "type": "string",
+            "required": false,
+            "title": "Net amount"
+          },
+          "vat": {
+            "type": "string",
+            "required": false,
+            "title": "VAT"
+          },
+          "gross_amount": {
+            "type": "string",
+            "required": false,
+            "title": "Gross amount"
+          },
+          "currency": {
+            "type": "string",
+            "required": false,
+            "title": "Currency"
+          },
+          "is_archived": {
+            "type": "string",
+            "required": false,
+            "title": "is Archived"
+          },
+          "is_ocr_completed": {
+            "type": "string",
+            "required": false,
+            "title": "is OCR completed"
+          },
+          "tags": {
+            "type": "string",
+            "required": false,
+            "title": "Tags"
+          },
+          "note": {
+            "type": "string",
+            "required": false,
+            "title": "Note"
+          },
+          "source": {
+            "type": "string",
+            "required": false,
+            "title": "Source"
+          },
+          "filename": {
+            "type": "string",
+            "required": false,
+            "title": "Filename"
+          },
+          "file_size": {
+            "type": "string",
+            "required": false,
+            "title": "Filesize"
+          },
+          "payment_status": {
+            "type": "string",
+            "required": false,
+            "title": "Payment status"
+          },
+          "payment_method": {
+            "type": "string",
+            "required": false,
+            "title": "Payment method"
+          },
+          "attachments": {
+            "type": "string",
+            "required": false,
+            "title": "Attachments"
+          },
+          "payment_details": {
+            "type": "object",
+            "required": false,
+            "title": "Payment Details",
+            "properties": {
+              "sender_email": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Sender Email"
+              },
+              "recipient_email": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Recipient Email"
+              },
+              "transaction_id": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Transaction ID"
+              },
+              "card_number": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Card number"
+              },
+              "account_number": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Account number"
+              },
+              "sepa_creditor_id": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Sepa creditor id"
+              },
+              "sepa_mandate_reference": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Sepa mandate reference"
+              },
+              "iban": {
+                  "type": "string",
+                  "required": false,
+                  "title": "IBAN"
+              },
+              "bic": {
+                  "type": "string",
+                  "required": false,
+                  "title": "BIC"
+              },
+              "account_holder_name": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Account holder name"
+              },
+              "bank_name": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Bank name"
+              },
+              "bank_address": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Bank address"
+              },
+              "sort_code": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Sort code"
+              },
+              "routing_number": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Routing number"
+              },
+              "ifsc_code": {
+                  "type": "string",
+                  "required": false,
+                  "title": "IFSC code"
+              },
+              "routing_code": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Routing code"
+              }   
+            }
+          },
+          "line_items": {
+            "type": "array",
+            "required": false,
+            "title": "Line items",
+            "properties": {
+              "quantity": {
+                "type": "numeric",
+                "required": false,
+                "title": "Quantity"
+              },
+              "description": {
+                "type": "string",
+                "required": false,
+                "title": "Description"
+              },
+              "tax_percentage": {
+                "type": "string",
+                "required": false,
+                "title": "Tax percentage"
+              },
+              "tax_amount": {
+                "type": "string",
+                "required": false,
+                "title": "Tax amount"
+              },
+              "unit_net_price": {
+                "type": "string",
+                "required": false,
+                "title": "Unit net price"
+              },
+              "total_gross": {
+                "type": "string",
+                "required": false,
+                "title": "Total gross"
+              }
+            }
+          }
+        }
+      },
+      "file_content": {
+        "type": "string",
+        "required": false,
+        "title": "File content"
+      },
+      "readable_content": {
+        "type": "string",
+        "required": false,
+        "title": "Readable content"
+      }
+    }
+}
